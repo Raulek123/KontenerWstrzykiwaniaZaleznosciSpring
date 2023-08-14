@@ -1,4 +1,4 @@
-package WstrzykiwanieZaleznosci;
+package wstrzykiwanieZaleznosci;
 
 public class MessagePrinter {
     private final SimpleMessageProducer messageProducer;

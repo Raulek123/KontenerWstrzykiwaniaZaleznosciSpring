@@ -1,4 +1,4 @@
-package WstrzykiwanieZaleznosci;
+package wstrzykiwanieZaleznosci;
 
 public class SimpleMessageProducer {
     String getMessage() {
