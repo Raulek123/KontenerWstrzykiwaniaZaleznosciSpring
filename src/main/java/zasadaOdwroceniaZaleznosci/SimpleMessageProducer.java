@@ -1,7 +1,7 @@
 package zasadaOdwroceniaZaleznosci;
 
-public class SimpleMessageProducer {
-    String getMessage() {
+public class SimpleMessageProducer implements MessageProducer {
+    public String getMessage() {
         return "Example message " + System.currentTimeMillis();
     }
 }
