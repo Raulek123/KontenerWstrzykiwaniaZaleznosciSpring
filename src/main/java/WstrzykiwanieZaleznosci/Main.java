@@ -2,7 +2,8 @@ package WstrzykiwanieZaleznosci;
 
 public class Main {
     public static void main(String[] args) {
-        MessagePrinter messagePrinter = new MessagePrinter();
+        SimpleMessageProducer simpleMessageProducer = new SimpleMessageProducer();
+        MessagePrinter messagePrinter = new MessagePrinter(simpleMessageProducer);
         messagePrinter.printMessage();
     }
 }

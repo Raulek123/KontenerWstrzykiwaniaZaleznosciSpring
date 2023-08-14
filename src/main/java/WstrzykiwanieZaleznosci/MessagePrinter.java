@@ -1,7 +1,11 @@
 package WstrzykiwanieZaleznosci;
 
 public class MessagePrinter {
-    private final SimpleMessageProducer messageProducer = new SimpleMessageProducer();
+    private final SimpleMessageProducer messageProducer;
+
+    public MessagePrinter(SimpleMessageProducer messageProducer) {
+        this.messageProducer = messageProducer;
+    }
 
     void printMessage() {
         String message = messageProducer.getMessage();
