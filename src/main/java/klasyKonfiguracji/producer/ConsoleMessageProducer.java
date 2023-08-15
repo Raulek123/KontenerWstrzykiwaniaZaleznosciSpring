@@ -8,10 +8,14 @@ import java.util.Scanner;
 @Service
 @Profile("console")
 public class ConsoleMessageProducer implements MessageProducer {
+    private final Scanner scanner;
+
+    public ConsoleMessageProducer(Scanner scanner) {
+        this.scanner = scanner;
+    }
     @Override
    public String getMessage() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter text to print:");
-        return sc.nextLine();
+        return scanner.nextLine();
     }
 }
