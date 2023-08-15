@@ -60,7 +60,7 @@ public class MessageController {
         }
     }
 
-    private enum Option() {
+    private enum Option {
         EXIT(0, "Wyjście z programu"),
         NEXT_MESSAGE(1, "Wczytaj kolejny komunikat");
 
