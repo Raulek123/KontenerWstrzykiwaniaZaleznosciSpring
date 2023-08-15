@@ -11,8 +11,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(Main.class);
-        MessagePrinter messagePrinter = context.getBean(MessagePrinter.class);
-        messagePrinter.printMessage();
+        MessageController messageController = context.getBean(MessageController.class);
+        messageController.mainLoop();
     }
     @Bean
     Scanner scanner() {
