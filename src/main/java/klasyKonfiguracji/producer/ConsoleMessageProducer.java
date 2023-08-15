@@ -15,7 +15,7 @@ public class ConsoleMessageProducer implements MessageProducer {
     }
     @Override
    public String getMessage() {
-        System.out.println("Enter text to print:");
+        System.out.println("Wpisz dowolny tekst:");
         return scanner.nextLine();
     }
 }
